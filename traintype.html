@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .header,.nav,.container,.footer{
+            width: 100%;
+        }
+        .header{
+            background: #ccc;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .nav{
+            background: #333;
+        }
+        .nav a{
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .nav a:hover{
+            background: #bbb;
+            color: #000;
+        }
+        .container{
+            background: #ccc;
+        }
+        .contain{
+            height: max-content;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+        .contain h2{
+            font-weight: 900;
+            font-family: 汉仪正圆;
+            font-size: 48px;
+            color: white;
+            -webkit-text-stroke: 2px rgb(0, 215, 251);
+        }
+        .contain p{
+            font-weight: 900;
+            font-family: 汉仪正圆;
+            font-size: 24px;
+            color: white;
+            -webkit-text-stroke: 1px rgb(0, 215, 251);
+        }
+        .article{
+            display: flex;
+            flex-flow: column nowrap;
+            background: #ccc;
+            gap: 20px;
+            padding: 10px;
+        }
+        .showBoard{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow:2px 2px 10px black;
+            background-color: white;
+        }
+        .showBoard:hover{
+            transform: scale(1.01,1.01);
+        }
+        .leftBoard{
+            width: 130px;
+            height: 130px;
+            border-radius: 10px;
+            background-size: cover;
+        }
+        .leftBoard img{
+            border-radius: 10px;
+        }
+        .rightBoard{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+            min-height: 130px;
+            justify-content: flex-start;
+        }
+        .title{
+            font-size: x-large;
+            margin: 0;
+        }
+        .introduce{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>IF的个人小屋</h1>     
+        </div>
+        <div class="nav">
+            <a href="main.html">主页</a>
+            <a href="yume.html">梦之铁路</a>
+            <a href="foxy.html">Foxy的英国铁路之旅</a>
+            <a href="#">柯林老师的列车种别理论</a>
+        </div>
+        <div class="container">
+            <div class="contain">
+                <h2>柯林老师的列车种别理论</h2>
+                <br>
+                <p>如果英国铁路有列车种别了会怎么样呢？</p>
+                <br>
+                <p>柯林以前写了一篇《铁路种别理论》的毕业论文</p>
+                <p>日后成为了大北方铁路等一众铁路运营商设置种别的理论基础</p>
+            </div>
+        </div> 
+        <div class="article">
+            <!-- 大北方铁路 -->
+            <div class="showBoard" onclick="location.href='https://www.bilibili.com/read/cv18096796';">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./traintype/1_GN.png"> 
+                </div>
+                <div class="rightBoard">
+                    <div class="title"><span style="color:rgb(67, 22, 92)">大北方</span><span style="color:rgb(0, 166, 226)">铁路</span>　<span style="color:rgb(67, 22, 92)">Great</span> <span style="color:rgb(0, 166, 226)">Northern</span></div>
+                    <div class="introduce">
+                        在2020年5月设置种别，是英国第一个设置种别的铁路运营商。<br/>
+                        包含2020夏季的种别图和运行形态图；2021-2022冬春季的种别图。
+                    </div>
+                </div>
+            </div>
+            <!-- 东部海岸线 -->
+            <div class="showBoard" onclick="location.href='https://www.bilibili.com/read/cv18097037';">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./traintype/2_ECW.png"> 
+                </div>
+                <div class="rightBoard">
+                    <div class="title"><span style="color:rgb(127, 194, 65)">南方铁路</span> 东部海岸线　<span style="color:rgb(127, 194, 65)">Southern</span> East Coastway Line</div>
+                    <div class="introduce">
+                        在2022年3月1日后的设置种别（同时Marshlink Line的电气化工程完工以及东南铁路的高速列车开始在东部海岸线直通运行）<br/>
+                        包含种别图和运行形态图。
+                    </div>
+                </div>
+            </div>
+            <!-- 伦敦西北铁路 -->
+            <div class="showBoard" onclick="location.href='https://www.bilibili.com/read/cv21920947';">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./traintype/3_LNWR.png"> 
+                </div>
+                <div class="rightBoard">
+                    <div class="title"><span style="color:#004c45">伦敦西北</span><span style="color:#00bf6e">铁路</span> 西海岸主线（伦敦-伯明翰）　<span style="color:#004c45">LNW</span><span style="color:#00bf6e">R</span> West Coast Main Line (London-Birmingham)</div>
+                    <div class="introduce">
+                        在2021年9月设置种别（与伊甸条约事件同月）<br/>
+                        包含种别图（伦敦-伯明翰段）。
+                    </div>
+                </div>
+            </div>
+            <!-- c2c -->
+            <div class="showBoard" onclick="location.href='https://www.bilibili.com/read/cv23359229';">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./traintype/4_c2c.png"> 
+                </div>
+                <div class="rightBoard">
+                    <div class="title"><span style="color:#b71c8c">c2c</span>　伦敦、蒂尔伯里和绍森德线（London, Tilbury and Southend line）</div>
+                    <div class="introduce">
+                        在2022年2月14日设置种别（当天若藻正好在大干一场）<br/>
+                        包含种别图和运行形态图。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

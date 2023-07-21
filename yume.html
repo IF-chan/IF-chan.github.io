@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .header,.nav,.container,.footer{
+            width: 100%;
+        }
+        .header{
+            background: #ccc;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .nav{
+            background: #333;
+        }
+        .nav a{
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .nav a:hover{
+            background: #bbb;
+            color: #000;
+        }
+        .container{
+            background: #ccc;
+        }
+        .contain{
+            height: max-content;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+        .contain h2{
+            font-weight: 900;
+            font-family: 汉仪正圆;
+            font-size: 48px;
+            color: white;
+            -webkit-text-stroke: 2px rgb(0, 215, 251);
+        }
+        .contain p{
+            font-weight: 900;
+            font-family: 汉仪正圆;
+            font-size: 24px;
+            color: white;
+            -webkit-text-stroke: 1px rgb(0, 215, 251);
+        }
+        .article{
+            display: flex;
+            flex-flow: column nowrap;
+            background: #ccc;
+            gap: 20px;
+            padding: 10px;
+        }
+        .showBoard{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow:2px 2px 10px black;
+            background-color: white;
+        }
+        .leftBoard{
+            width: 130px;
+            height: 130px;
+            border-radius: 10px;
+            background-size: cover;
+        }
+        .leftBoard img{
+            border-radius: 10px;
+        }
+        .rightBoard{
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+            min-height: 130px;
+            justify-content: space-between;
+        }
+        .title{
+            font-size: x-large;
+            margin: 0;
+        }
+        .introduce{
+            margin: 0;
+        }
+        .link{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 10px;
+        }
+        .link a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>IF的个人小屋</h1>     
+        </div>
+        <div class="nav">
+            <a href="main.html">主页</a>
+            <a href="#">梦之铁路</a>
+            <a href="foxy.html">Foxy的英国铁路之旅</a>
+            <a href="traintype.html">柯林老师的列车种别理论</a>
+        </div>
+        <div class="container">
+            <div class="contain">
+                <img src="yume_logo.png" width="800">
+                <br>
+                <p>这是夏莱成立之前的故事</p>
+                <p>阿拜多斯高等学院最后的学生会长，同时也是首屈一指的笨蛋——梦前辈</p>
+                <p>因为某种原因，在英国伦敦的街头复活了，竟然还遇到了未来会成为夏莱的老师的柯林。而且梦前辈还发现自己变小了？</p>
+                <p>两人之间究竟会碰撞出什么火花呢？</p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/0.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">设定介绍</div>
+                    <div class="introduce">自己碧蓝档案同人的设定介绍<span style="color:red">（必看！）</span></div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/read/cv19966440">B站专栏（推荐）</a>
+                        <a target="_blank" href="https://www.pixiv.net/novel/show.php?id=19346176">Pixiv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contain">
+                <h2>实践篇</h2>
+            </div>
+        </div>
+        <div class="article">
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/1_0.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">序章 复活</div>
+                    <div class="introduce">梦前辈和柯林老师的初遇</div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/read/cv18774137">B站专栏（推荐）</a>
+                        <a target="_blank" href="https://www.pixiv.net/novel/show.php?id=18421537">Pixiv</a>
+                    </div>
+                </div>
+            </div>
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/1_1.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">第一章 初见布莱顿主线</div>
+                    <div class="introduce">梦前辈第一次体验英国铁路</div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/read/cv19050064">B站专栏（推荐）</a>
+                        <a target="_blank" href="https://www.pixiv.net/novel/show.php?id=18522598">Pixiv</a>
+                    </div>
+                </div>
+            </div>
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/1_2.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">第二章 铁路博物馆之旅</div>
+                    <div class="introduce">梦前辈与柯林在2018年最后一天一起去参观位于约克的大英铁路博物馆</div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/read/cv19531275">B站专栏（推荐）</a>
+                        <a target="_blank" href="https://www.pixiv.net/novel/show.php?id=18662065">Pixiv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contain">
+                <img src="./yume/CL_0.png" height="48">
+                <p>如果London Crosslink实现了会怎么样呢？</p>
+                <p>另外，如果彩弹在夏莱成立前就在老师的家乡遇到老师了会怎么样呢？</p>
+            </div>
+        </div>
+        <div class="article">
+            <!-- CL设定 -->
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/CL_1.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">Crosslink设定介绍</div>
+                    <div class="introduce">
+                        介绍Crosslink相关信息以及与前代London Crosslink的区别。<br/>
+                        包含线路图，实际走向图等。
+                    </div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/read/cv24030702">B站专栏（推荐）</a>
+                        <a target="_blank" href="https://rail.moe/t/topic/21195">RailForWork</a>
+                    </div>
+                </div>
+            </div>
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/CL_1.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">第一章 如果London Crosslink实现了……</div>
+                    <div class="introduce">如果London Crosslink实现了……</div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/video/BV1Rg4y1A77z">视频版（推荐）</a>
+                        <a target="_blank" href="https://www.bilibili.com/read/cv23961005">B站专栏</a>
+                        <a target="_blank" href="https://www.pixiv.net/novel/show.php?id=20001387">Pixiv</a>
+                    </div>
+                </div>
+            </div>
+            <div class="showBoard">
+                <div class="leftBoard">
+                    <img class="leftBoardImg" src="./yume/CL_2.png">
+                </div>
+                <div class="rightBoard">
+                    <div class="title">第二章 与真纪的Crosslink</div>
+                    <div class="introduce">如果彩弹在夏莱成立前就在老师的家乡遇到老师了会怎么样呢？</div>
+                    <div class="link">
+                        <a target="_blank" href="https://www.bilibili.com/video/BV13z4y1J7L4">视频版（推荐）</a>
+                        <a target="_blank" href="https://www.bilibili.com/read/cv24523883">B站专栏</a>
+                        <a target="_blank" href="https://www.pixiv.net/novel/show.php?id=20124758">Pixiv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
